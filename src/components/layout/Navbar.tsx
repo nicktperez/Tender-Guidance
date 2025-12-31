@@ -67,11 +67,15 @@ export function Navbar() {
                                 key={route.href}
                                 href={route.href}
                                 onClick={() => setIsOpen(false)}
-                                className="text-lg font-medium text-stone-700 py-2 border-b border-stone-100"
+                                className="text-lg font-medium text-foreground py-2 border-b border-stone-200/50"
                             >
                                 {route.label}
                             </Link>
                         ))}
+                        <div className="flex items-center justify-between py-2 border-b border-stone-200/50">
+                            <span className="text-lg font-medium text-foreground">Dark Mode</span>
+                            <ThemeToggle />
+                        </div>
                         <div className="pt-4">
                             <Button href="/buy" className="w-full justify-center gap-2" onClick={() => setIsOpen(false)}>
                                 <ShoppingBag className="w-4 h-4" /> Shop All Packets
