@@ -1,0 +1,135 @@
+[
+    {
+        "id": "1",
+        "slug": "boundary-scripts-pregnancy",
+        "title": "Boundary Scripts Pack (Pregnancy Edition)",
+        "type": "packet",
+        "price": 12,
+        "shortDescription": "Exact words to say to pushy family, intrusive strangers, and belly-touchers.",
+        "longDescription": "Pregnancy seems to invite everyone's opinion. This pack gives you polite but firm scripts to handle the most common awkward situations, from unwanted belly touching to 'are you sure?' comments about your birth plan. Includes printable cheat sheets.",
+        "includes": [
+            "20+ Scripts for family & strangers",
+            "Pocket 'Cheatsheet' for quick replies",
+            "Digital Guidebook (PDF)"
+        ],
+        "previewImages": [
+            "/products/boundary-scripts.png",
+            "/products/hospital-kit.png"
+        ],
+        "faq": [
+            {
+                "question": "Is this a physical book?",
+                "answer": "No, this is a digital download (PDF) you can read on your phone or print."
+            }
+        ],
+        "checkoutUrl": "#",
+        "featured": true
+    },
+    {
+        "id": "2",
+        "slug": "hospital-visitor-boundaries",
+        "title": "Hospital + Visitor Boundaries Kit",
+        "type": "packet",
+        "price": 15,
+        "shortDescription": "Manage visitors, protect your golden hour, and set expectations without drama.",
+        "longDescription": "The first hours and days after birth are sacred. This kit helps you communicate your visitor policy clearly to family beforehand, so you don't have to be the 'bad guy' while recovering.",
+        "includes": [
+            "Visitor Policy Email Templates",
+            "Hospital Door Sign (Printable)",
+            "text Scripts for 'Not today'"
+        ],
+        "previewImages": [
+            "/products/hospital-kit.png",
+            "/products/boundary-scripts.png"
+        ],
+        "faq": [
+            {
+                "question": "When should I send the policy?",
+                "answer": "We recommend sending it 4-6 weeks before your due date."
+            }
+        ],
+        "checkoutUrl": "#",
+        "featured": true
+    },
+    {
+        "id": "3",
+        "slug": "workplace-scripts",
+        "title": "Workplace Scripts + Email Templates",
+        "type": "packet",
+        "price": 18,
+        "shortDescription": "Professional ways to announce pregnancy, plan leave, and handle awkward coworkers.",
+        "longDescription": "Navigating pregnancy at work is tricky. These scripts help you announce your news professionally, set boundaries around your capacity, and plan your maternity leave handover confidently.",
+        "includes": [
+            "Announcement Email Templates",
+            "Leave Handover Checklist",
+            "Scripts for 'unsolicited advice' at work"
+        ],
+        "previewImages": [
+            "/products/boundary-scripts.png",
+            "/products/hospital-kit.png"
+        ],
+        "faq": [],
+        "checkoutUrl": "#",
+        "featured": false
+    },
+    {
+        "id": "4",
+        "slug": "calm-pregnancy-affirmations",
+        "title": "Calm Pregnancy Affirmation Prints",
+        "type": "illustration",
+        "price": 10,
+        "shortDescription": "Set of 10 minimalist affirmations to keep you grounded.",
+        "longDescription": "Decorate your space with these calming, non-cheesy affirmations. designed to remind you of your strength and capability during pregnancy.",
+        "includes": [
+            "10 High-res Printable Files (JPG/PDF)",
+            "3 Sizing Options"
+        ],
+        "previewImages": [
+            "/products/nursery-prints.png",
+            "/products/nope-cards.png"
+        ],
+        "faq": [],
+        "checkoutUrl": "#",
+        "featured": false
+    },
+    {
+        "id": "5",
+        "slug": "minimal-nursery-quotes",
+        "title": "Minimal Nursery Quote Prints",
+        "type": "illustration",
+        "price": 12,
+        "shortDescription": "Set of 12 simple, gender-neutral prints for a modern nursery.",
+        "longDescription": "Skip the bright cartoons. These minimal typographic prints fit perfectly in a calm, modern nursery aesthetic.",
+        "includes": [
+            "12 Digital Prints",
+            "Vector quality"
+        ],
+        "previewImages": [
+            "/products/nursery-prints.png",
+            "/products/boundary-scripts.png"
+        ],
+        "faq": [],
+        "checkoutUrl": "#",
+        "featured": false
+    },
+    {
+        "id": "6",
+        "slug": "nope-boundary-prints",
+        "title": "Funny 'Nope' Boundary Mini Prints",
+        "type": "illustration",
+        "price": 8,
+        "shortDescription": "Set of 8 humorous cards to remind you it's okay to say no.",
+        "longDescription": "Sometimes you just need a laugh. These mini-prints feature short, funny reminders that 'No' is a complete sentence.",
+        "includes": [
+            "8 Digital Cards",
+            "Printable as stickers or cards"
+        ],
+        "previewImages": [
+            "/products/nope-cards.png",
+            "/products/hospital-kit.png"
+        ],
+        "faq": [],
+        "checkoutUrl": "#",
+        "featured": true
+    }
+]
