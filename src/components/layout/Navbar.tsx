@@ -20,10 +20,10 @@ export function Navbar() {
     ];
 
     return (
-        <header className="sticky top-0 z-50 w-full border-b border-stone-200 bg-stone-50/80 backdrop-blur-md">
+        <header className="sticky top-0 z-50 w-full border-b border-stone-200 bg-background/80 backdrop-blur-md">
             <div className="container mx-auto px-4 h-16 flex items-center justify-between">
                 {/* Logo */}
-                <Link href="/" className="font-bold text-xl tracking-tight text-stone-900 flex items-center gap-2">
+                <Link href="/" className="font-bold text-xl tracking-tight text-foreground flex items-center gap-2">
                     <img src="/logo.png" alt="Logo" className="w-8 h-8 object-contain" />
                     Tender Guidance
                 </Link>
@@ -35,8 +35,8 @@ export function Navbar() {
                             key={route.href}
                             href={route.href}
                             className={cn(
-                                'text-sm font-medium transition-colors hover:text-stone-900',
-                                pathname === route.href ? 'text-stone-900' : 'text-stone-500'
+                                'text-sm font-medium transition-colors hover:text-foreground/80',
+                                pathname === route.href ? 'text-foreground font-bold' : 'text-stone-500'
                             )}
                         >
                             {route.label}
@@ -60,7 +60,7 @@ export function Navbar() {
 
             {/* Mobile Menu */}
             {isOpen && (
-                <div className="md:hidden border-t border-stone-200 bg-stone-50 p-4 absolute w-full shadow-lg h-[calc(100vh-4rem)]">
+                <div className="md:hidden border-t border-stone-200 bg-background p-4 absolute w-full shadow-lg h-[calc(100vh-4rem)]">
                     <nav className="flex flex-col gap-4">
                         {routes.map((route) => (
                             <Link

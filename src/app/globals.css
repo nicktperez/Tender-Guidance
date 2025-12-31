@@ -13,17 +13,17 @@
   /* Pale Lemon */
 }
 
-:root.amber-mode {
-  --background: #1A1110;
-  /* Deep Warm Black */
-  --foreground: #EAC7A8;
-  /* Soft Amber Light */
-  --primary: #D67C65;
-  /* Muted Terracotta */
-  --secondary: #5C4B45;
-  /* Dark Warm Brown */
-  --accent: #2C221F;
-  /* Dark Chocolate */
+:root.dark-theme {
+  --background: #020617;
+  /* Deep Slate 950 - Clean, dark background */
+  --foreground: #F8FAFC;
+  /* Slate 50 - Bright white for max legibility */
+  --primary: #FB7185;
+  /* Rose 400 - Vibrant popup color */
+  --secondary: #1E293B;
+  /* Slate 800 - Distinct card background */
+  --accent: #0F172A;
+  /* Slate 900 - Darker accents */
 }
 
 @theme inline {

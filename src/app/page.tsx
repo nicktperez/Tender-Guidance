@@ -22,7 +22,7 @@ export default function Home() {
               Practical scripts, boundary guides, and unbiased advice for when you just need a straight answer (and a hug).
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
-              <Button href="/tools/boundary-generator" size="lg" className="rounded-full px-8 shadow-md hover:shadow-lg transition-all bg-stone-900 text-white flex items-center gap-2">
+              <Button href="/tools/boundary-generator" size="lg" className="rounded-full px-8 shadow-md hover:shadow-lg transition-all bg-foreground text-background hover:bg-foreground/90 flex items-center gap-2">
                 <BrandSparkle className="w-4 h-4 text-primary" /> Try Script Generator
               </Button>
               <Button href="/advice" variant="outline" size="lg" className="rounded-full px-8 border-2">
@@ -44,41 +44,41 @@ export default function Home() {
       {/* Value Props */}
       <section className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <Card className="rounded-3xl border-none bg-white shadow-xl shadow-stone-200/50 hover:-translate-y-1 transition-transform duration-300">
+          <Card className="rounded-3xl border-none bg-background shadow-xl shadow-stone-200/50 hover:-translate-y-1 transition-transform duration-300 ring-1 ring-stone-900/5">
             <CardHeader>
               <div className="w-12 h-12 bg-secondary rounded-2xl flex items-center justify-center mb-4">
                 <Heart className="w-6 h-6 text-stone-700" />
               </div>
-              <CardTitle className="font-serif text-2xl">Zero Judgment</CardTitle>
+              <CardTitle className="font-serif text-2xl text-foreground">Zero Judgment</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-stone-700 leading-relaxed">
+              <p className="text-foreground/80 leading-relaxed">
                 We believe you are the expert on your baby. We're just here to give you the tools and confidence to trust yourself.
               </p>
             </CardContent>
           </Card>
-          <Card className="rounded-3xl border-none bg-white shadow-xl shadow-stone-200/50 hover:-translate-y-1 transition-transform duration-300">
+          <Card className="rounded-3xl border-none bg-background shadow-xl shadow-stone-200/50 hover:-translate-y-1 transition-transform duration-300 ring-1 ring-stone-900/5">
             <CardHeader>
               <div className="w-12 h-12 bg-primary/30 rounded-2xl flex items-center justify-center mb-4">
                 <Sparkles className="w-6 h-6 text-stone-700" />
               </div>
-              <CardTitle className="font-serif text-2xl">Scripts to Say</CardTitle>
+              <CardTitle className="font-serif text-2xl text-foreground">Scripts to Say</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-stone-700 leading-relaxed">
+              <p className="text-foreground/80 leading-relaxed">
                 Freeze up when people ask awkward questions? We give you exact scripts to handle family, work, and strangers.
               </p>
             </CardContent>
           </Card>
-          <Card className="rounded-3xl border-none bg-white shadow-xl shadow-stone-200/50 hover:-translate-y-1 transition-transform duration-300">
+          <Card className="rounded-3xl border-none bg-background shadow-xl shadow-stone-200/50 hover:-translate-y-1 transition-transform duration-300 ring-1 ring-stone-900/5">
             <CardHeader>
               <div className="w-12 h-12 bg-accent rounded-2xl flex items-center justify-center mb-4">
                 <BookOpen className="w-6 h-6 text-stone-700" />
               </div>
-              <CardTitle className="font-serif text-2xl">Digital Tools</CardTitle>
+              <CardTitle className="font-serif text-2xl text-foreground">Digital Tools</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-stone-700 leading-relaxed">
+              <p className="text-foreground/80 leading-relaxed">
                 Beautifully designed PDF packets and prints to help you manage boundaries and mental load.
               </p>
             </CardContent>
@@ -88,10 +88,10 @@ export default function Home() {
 
       {/* Popular Topics */}
       <section className="container mx-auto px-6 text-center py-12">
-        <h2 className="text-4xl font-serif font-bold mb-10 text-stone-900">What's on your mind?</h2>
+        <h2 className="text-4xl font-serif font-bold mb-10 text-foreground">What's on your mind?</h2>
         <div className="flex flex-wrap justify-center gap-4">
           {["Boundaries", "Body Comments", "Work", "Birth Preferences", "Anxiety", "Partner Support", "Sleep", "Feeding"].map((topic) => (
-            <Link key={topic} href={`/advice?search=${topic}`} className="bg-white border-2 border-stone-100 px-6 py-3 rounded-full text-stone-700 hover:bg-stone-50 hover:border-primary/50 transition-all font-medium shadow-sm hover:shadow-md">
+            <Link key={topic} href={`/advice?search=${topic}`} className="bg-background border-2 border-stone-100 px-6 py-3 rounded-full text-foreground hover:bg-secondary/20 hover:border-primary/50 transition-all font-medium shadow-sm hover:shadow-md">
               {topic}
             </Link>
           ))}

@@ -8,17 +8,17 @@ export function ThemeToggle() {
     const [isAmber, setIsAmber] = useState(false);
 
     useEffect(() => {
-        if (document.documentElement.classList.contains('amber-mode')) {
+        if (document.documentElement.classList.contains('dark-theme')) {
             setIsAmber(true);
         }
     }, []);
 
     const toggleTheme = () => {
         if (isAmber) {
-            document.documentElement.classList.remove('amber-mode');
+            document.documentElement.classList.remove('dark-theme');
             setIsAmber(false);
         } else {
-            document.documentElement.classList.add('amber-mode');
+            document.documentElement.classList.add('dark-theme');
             setIsAmber(true);
         }
     };

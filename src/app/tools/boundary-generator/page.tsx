@@ -39,27 +39,27 @@ export default function BoundaryGenerator() {
     return (
         <div className="container mx-auto px-6 py-12 max-w-4xl">
             <div className="text-center mb-12">
-                <h1 className="text-4xl md:text-5xl font-serif font-bold text-stone-900 mb-4">
+                <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-4">
                     Interactive Boundary Generator
                 </h1>
-                <p className="text-lg text-stone-600">
+                <p className="text-lg text-foreground/80">
                     Tell us the situation, choose your vibe, and get the perfect script.
                 </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-12 items-start">
                 {/* Controls */}
-                <div className="space-y-8 bg-white p-8 rounded-3xl shadow-sm border border-stone-100">
+                <div className="space-y-8 bg-background p-8 rounded-3xl shadow-sm border border-stone-200/50">
                     <div>
-                        <label className="block text-sm font-bold text-stone-900 mb-3 uppercase tracking-wider">Who is it?</label>
+                        <label className="block text-sm font-bold text-foreground mb-3 uppercase tracking-wider">Who is it?</label>
                         <div className="flex flex-wrap gap-2">
                             {whoOptions.map(opt => (
                                 <button
                                     key={opt.id}
                                     onClick={() => setWho(opt.id)}
                                     className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${who === opt.id
-                                        ? 'bg-stone-900 text-white shadow-md transform scale-105'
-                                        : 'bg-stone-100 text-stone-600 hover:bg-stone-200'
+                                        ? 'bg-foreground text-background shadow-md transform scale-105'
+                                        : 'bg-secondary/10 text-foreground/80 hover:bg-secondary/20'
                                         }`}
                                 >
                                     {opt.label}
@@ -69,15 +69,15 @@ export default function BoundaryGenerator() {
                     </div>
 
                     <div>
-                        <label className="block text-sm font-bold text-stone-900 mb-3 uppercase tracking-wider">The Issue</label>
+                        <label className="block text-sm font-bold text-foreground mb-3 uppercase tracking-wider">The Issue</label>
                         <div className="flex flex-wrap gap-2">
                             {topicOptions.map(opt => (
                                 <button
                                     key={opt.id}
                                     onClick={() => setTopic(opt.id)}
                                     className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${topic === opt.id
-                                        ? 'bg-stone-900 text-white shadow-md transform scale-105'
-                                        : 'bg-stone-100 text-stone-600 hover:bg-stone-200'
+                                        ? 'bg-foreground text-background shadow-md transform scale-105'
+                                        : 'bg-secondary/10 text-foreground/80 hover:bg-secondary/20'
                                         }`}
                                 >
                                     {opt.label}
@@ -87,15 +87,15 @@ export default function BoundaryGenerator() {
                     </div>
 
                     <div>
-                        <label className="block text-sm font-bold text-stone-900 mb-3 uppercase tracking-wider">The Vibe</label>
+                        <label className="block text-sm font-bold text-foreground mb-3 uppercase tracking-wider">The Vibe</label>
                         <div className="grid grid-cols-1 gap-2">
                             {vibeOptions.map(opt => (
                                 <button
                                     key={opt.id}
                                     onClick={() => setVibe(opt.id)}
                                     className={`px-4 py-3 rounded-xl text-sm font-medium transition-all text-left border-2 ${vibe === opt.id
-                                        ? 'border-primary bg-primary/10 text-stone-900'
-                                        : 'border-transparent bg-stone-50 text-stone-600 hover:bg-stone-100'
+                                        ? 'border-primary bg-primary/20 text-foreground'
+                                        : 'border-transparent bg-secondary/10 text-foreground/80 hover:bg-secondary/20'
                                         }`}
                                 >
                                     {opt.label}
